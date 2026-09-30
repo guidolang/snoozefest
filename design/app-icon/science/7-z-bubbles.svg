@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Z Bubbles: a tilted test tube whose bubbles rise as sleepy Z's. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#7A45C9"/>
+    </linearGradient>
+    <linearGradient id="liquid" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE08A"/>
+      <stop offset="1" stop-color="#FFB547"/>
+    </linearGradient>
+    <clipPath id="tube"><rect x="-80" y="-300" width="160" height="600" rx="80"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g transform="translate(420 600) rotate(-20)">
+    <g clip-path="url(#tube)">
+      <rect x="-80" y="-60" width="160" height="400" fill="url(#liquid)"/>
+      <circle cx="-20" cy="60" r="16" fill="#FFFFFF" opacity="0.7"/>
+      <circle cx="25" cy="150" r="11" fill="#FFFFFF" opacity="0.6"/>
+      <circle cx="-15" cy="220" r="8" fill="#FFFFFF" opacity="0.5"/>
+    </g>
+    <rect x="-80" y="-300" width="160" height="600" rx="80" fill="none" stroke="#FFFFFF" stroke-width="28"/>
+    <rect x="-110" y="-320" width="220" height="40" rx="20" fill="#FFFFFF"/>
+  </g>
+  <!-- Rising Z's -->
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="560,330 640,330 560,410 640,410" stroke-width="30"/>
+    <polyline points="690,200 745,200 690,255 745,255" stroke-width="24" opacity="0.85"/>
+    <polyline points="790,110 825,110 790,145 825,145" stroke-width="18" opacity="0.7"/>
+  </g>
+</svg>

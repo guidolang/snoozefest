@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Moon Atom: a crescent moon as the nucleus, with star "electrons" on orbits. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241B63"/>
+      <stop offset="1" stop-color="#6B3FB8"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="500" cy="530" r="150" fill="#fff"/>
+      <circle cx="570" cy="470" r="128" fill="#000"/>
+    </mask>
+    <path id="star" d="M0 -34 Q0 0 34 0 Q0 0 0 34 Q0 0 -34 0 Q0 0 0 -34 Z"/>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g fill="none" stroke="#FFFFFF" stroke-width="20" opacity="0.85">
+    <ellipse cx="512" cy="512" rx="360" ry="130"/>
+    <ellipse cx="512" cy="512" rx="360" ry="130" transform="rotate(60 512 512)"/>
+    <ellipse cx="512" cy="512" rx="360" ry="130" transform="rotate(-60 512 512)"/>
+  </g>
+  <rect x="330" y="360" width="340" height="340" fill="url(#moon)" mask="url(#crescent)"/>
+  <g fill="#FFFFFF">
+    <use href="#star" transform="translate(872 512) scale(1.7)"/>
+    <use href="#star" transform="translate(332 200) scale(1.5)"/>
+    <use href="#star" transform="translate(692 824) scale(1.5)"/>
+  </g>
+</svg>

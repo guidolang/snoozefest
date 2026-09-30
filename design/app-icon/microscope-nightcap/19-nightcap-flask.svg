@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Nightcap Flask: a lab flask of night sky, wearing a nightcap. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2F95"/>
+      <stop offset="1" stop-color="#8F6BE8"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1860"/>
+      <stop offset="1" stop-color="#2B2178"/>
+    </linearGradient>
+    <path id="flask" d="M432 330 H592 V470 L780 810 Q808 870 742 870 H282 Q216 870 244 810 L432 470 Z"/>
+    <clipPath id="inside"><use href="#flask"/></clipPath>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g clip-path="url(#inside)">
+    <rect x="200" y="560" width="620" height="340" fill="url(#sky)"/>
+    <rect x="200" y="552" width="620" height="16" fill="#FFFFFF" opacity="0.25"/>
+    <g fill="none" stroke="#FFC94D" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="440,660 520,660 440,740 520,740" stroke-width="26"/>
+      <polyline points="560,610 600,610 560,650 600,650" stroke-width="18"/>
+    </g>
+    <circle cx="640" cy="780" r="9" fill="#FFFFFF"/>
+    <circle cx="350" cy="800" r="7" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <use href="#flask" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linejoin="round"/>
+  <!-- Nightcap over the neck -->
+  <g transform="translate(512 330)">
+    <path d="M-110 10 Q-80 -210 110 -230 Q200 -210 230 -110 Q140 -170 70 -120 Q95 -60 110 10 Z" fill="#7FCBFF"/>
+    <rect x="-130" y="-10" width="260" height="60" rx="30" fill="#FFFFFF"/>
+    <circle cx="238" cy="-100" r="40" fill="#FFC94D"/>
+  </g>
+</svg>

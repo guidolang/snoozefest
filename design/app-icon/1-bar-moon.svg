@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Bar Moon: a crescent built from nightly bars, like the Trends chart. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241B63"/>
+      <stop offset="1" stop-color="#6B3FB8"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFE6A3"/>
+      <stop offset="1" stop-color="#FFC857"/>
+    </linearGradient>
+    <!-- Crescent = outer circle minus offset inner circle -->
+    <mask id="crescent">
+      <circle cx="500" cy="520" r="330" fill="#fff"/>
+      <circle cx="640" cy="420" r="290" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g mask="url(#crescent)" fill="url(#moon)">
+    <rect x="170" y="100" width="52" height="840" rx="26"/>
+    <rect x="240" y="100" width="52" height="840" rx="26"/>
+    <rect x="310" y="100" width="52" height="840" rx="26"/>
+    <rect x="380" y="100" width="52" height="840" rx="26"/>
+    <rect x="450" y="100" width="52" height="840" rx="26"/>
+    <rect x="520" y="100" width="52" height="840" rx="26"/>
+    <rect x="590" y="100" width="52" height="840" rx="26"/>
+    <rect x="660" y="100" width="52" height="840" rx="26"/>
+    <rect x="730" y="100" width="52" height="840" rx="26"/>
+    <rect x="800" y="100" width="52" height="840" rx="26"/>
+  </g>
+</svg>

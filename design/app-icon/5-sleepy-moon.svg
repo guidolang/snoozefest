@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Sleepy Moon: a friendly, child-oriented crescent with a closed eye. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2F95"/>
+      <stop offset="1" stop-color="#8F6BE8"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="470" cy="540" r="320" fill="#fff"/>
+      <circle cx="620" cy="420" r="270" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="140" y="210" width="660" height="660" fill="url(#moon)" mask="url(#crescent)"/>
+  <!-- Cheek -->
+  <circle cx="380" cy="700" r="34" fill="#FF8FA3" opacity="0.55"/>
+  <!-- Sparkles -->
+  <path d="M760 250 Q760 330 840 330 Q760 330 760 410 Q760 330 680 330 Q760 330 760 250 Z" fill="#FFFFFF"/>
+  <path d="M850 520 Q850 555 885 555 Q850 555 850 590 Q850 555 815 555 Q850 555 850 520 Z" fill="#FFFFFF" opacity="0.8"/>
+</svg>

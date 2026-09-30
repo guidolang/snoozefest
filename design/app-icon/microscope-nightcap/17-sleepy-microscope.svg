@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Sleepy Microscope: a microscope wearing a striped nightcap, with rising Z's. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#7A45C9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g fill="#FFFFFF">
+    <rect x="240" y="810" width="480" height="70" rx="35"/>
+    <rect x="580" y="610" width="80" height="220" rx="24"/>
+    <path d="M620 630 Q720 460 580 330" fill="none" stroke="#FFFFFF" stroke-width="80" stroke-linecap="round"/>
+    <rect x="280" y="650" width="360" height="44" rx="22"/>
+    <g transform="translate(470 440) rotate(20)">
+      <rect x="-55" y="-140" width="110" height="280" rx="26"/>
+      <rect x="-30" y="130" width="60" height="80" rx="12"/>
+    </g>
+  </g>
+  <!-- Nightcap on the eyepiece -->
+  <g transform="translate(518 300) rotate(20) scale(0.9)">
+    <path d="M-80 30 Q-40 -170 110 -210 Q60 -120 80 30 Z" fill="#FFC94D"/>
+    <path d="M-62 -40 Q0 -60 76 -52 L78 -20 Q0 -30 -70 -8 Z" fill="#FF8FA3"/>
+    <path d="M-30 -140 Q30 -160 92 -150 L96 -125 Q30 -132 -40 -112 Z" fill="#FF8FA3"/>
+    <rect x="-95" y="10" width="190" height="56" rx="28" fill="#FFFFFF"/>
+    <circle cx="118" cy="-214" r="34" fill="#FFFFFF"/>
+  </g>
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="680,230 740,230 680,290 740,290" stroke-width="26"/>
+    <polyline points="780,130 820,130 780,170 820,170" stroke-width="20" opacity="0.8"/>
+  </g>
+</svg>

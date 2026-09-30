@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Pencil Moon: a pencil tracing the crescent moon, as if writing down the night. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#3A2F95"/>
+      <stop offset="1" stop-color="#8F6BE8"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="450" cy="540" r="290" fill="#fff"/>
+      <circle cx="590" cy="430" r="250" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="150" y="240" width="600" height="600" fill="url(#moon)" mask="url(#crescent)"/>
+  <!-- Pencil, tip touching the moon's lower tip -->
+  <g transform="translate(720 690) rotate(-135)">
+    <rect x="-40" y="0" width="80" height="300" fill="#FFFFFF"/>
+    <rect x="-40" y="0" width="27" height="300" fill="#E4E0FF"/>
+    <rect x="-40" y="270" width="80" height="60" rx="8" fill="#FF8FA3"/>
+    <path d="M-40 0 L0 -90 L40 0 Z" fill="#F4D9B0"/>
+    <path d="M-13 -60 L0 -90 L13 -60 Z" fill="#2B2178"/>
+  </g>
+  <path d="M760 250 Q760 300 810 300 Q760 300 760 350 Q760 300 710 300 Q760 300 760 250 Z" fill="#FFFFFF"/>
+</svg>

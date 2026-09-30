@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Night Log: a ruled notebook page whose lines are the app's nightly sleep bars, under a moon. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#7A45C9"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="700" cy="300" r="120" fill="#fff"/>
+      <circle cx="752" cy="252" r="102" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- Page with binding holes -->
+  <rect x="180" y="210" width="620" height="660" rx="48" fill="#FFFFFF"/>
+  <g fill="#2B2178">
+    <circle cx="240" cy="330" r="18"/><circle cx="240" cy="540" r="18"/><circle cx="240" cy="750" r="18"/>
+  </g>
+  <line x1="290" y1="240" x2="290" y2="840" stroke="#FF8FA3" stroke-width="8"/>
+  <!-- Nights -->
+  <rect x="330" y="420" width="380" height="40" rx="20" fill="#5E5CE6"/>
+  <rect x="330" y="520" width="260" height="40" rx="20" fill="#5E5CE6"/>
+  <rect x="602" y="520" width="108" height="40" rx="20" fill="#5E5CE6" opacity="0.4"/>
+  <rect x="330" y="620" width="330" height="40" rx="20" fill="#5E5CE6"/>
+  <rect x="330" y="720" width="400" height="40" rx="20" fill="#5E5CE6"/>
+  <rect x="560" y="160" width="300" height="300" fill="url(#moon)" mask="url(#crescent)"/>
+</svg>

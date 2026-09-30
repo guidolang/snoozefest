@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Petri Night: a petri dish viewed from above, holding a moon and stars like a culture. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#7A45C9"/>
+    </linearGradient>
+    <radialGradient id="dish" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#1A144A"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="480" cy="540" r="170" fill="#fff"/>
+      <circle cx="560" cy="470" r="145" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <circle cx="512" cy="512" r="330" fill="url(#dish)"/>
+  <circle cx="512" cy="512" r="330" fill="none" stroke="#FFFFFF" stroke-width="30"/>
+  <circle cx="512" cy="512" r="290" fill="none" stroke="#FFFFFF" stroke-width="10" opacity="0.35"/>
+  <rect x="290" y="350" width="380" height="380" fill="url(#moon)" mask="url(#crescent)"/>
+  <path d="M660 360 Q660 400 700 400 Q660 400 660 440 Q660 400 620 400 Q660 400 660 360 Z" fill="#FFFFFF"/>
+  <circle cx="690" cy="600" r="10" fill="#FFFFFF" opacity="0.85"/>
+  <circle cx="600" cy="700" r="7" fill="#FFFFFF" opacity="0.7"/>
+  <ellipse cx="400" cy="300" rx="110" ry="36" fill="#FFFFFF" opacity="0.15" transform="rotate(-30 400 300)"/>
+</svg>

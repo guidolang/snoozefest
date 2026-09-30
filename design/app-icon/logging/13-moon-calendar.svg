@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Moon Calendar: a calendar page where every logged night is a small moon. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#241B63"/>
+      <stop offset="1" stop-color="#6B3FB8"/>
+    </linearGradient>
+    <mask id="c">
+      <circle cx="0" cy="0" r="34" fill="#fff"/>
+      <circle cx="16" cy="-13" r="29" fill="#000"/>
+    </mask>
+    <rect id="m" x="-40" y="-40" width="80" height="80" fill="#FFC94D" mask="url(#c)"/>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <rect x="170" y="210" width="684" height="640" rx="60" fill="#FFFFFF"/>
+  <path d="M170 270 Q170 210 230 210 H794 Q854 210 854 270 V350 H170 Z" fill="#FF8FA3"/>
+  <rect x="300" y="160" width="40" height="110" rx="20" fill="#1E1860"/>
+  <rect x="684" y="160" width="40" height="110" rx="20" fill="#1E1860"/>
+  <!-- 4 x 3 grid of nights -->
+  <g>
+    <use href="#m" transform="translate(290 440)"/>
+    <use href="#m" transform="translate(435 440)"/>
+    <use href="#m" transform="translate(580 440)"/>
+    <use href="#m" transform="translate(725 440)"/>
+    <use href="#m" transform="translate(290 585)"/>
+    <use href="#m" transform="translate(435 585)"/>
+    <use href="#m" transform="translate(580 585)"/>
+    <use href="#m" transform="translate(725 585)"/>
+    <use href="#m" transform="translate(290 730)"/>
+    <use href="#m" transform="translate(435 730)"/>
+    <circle cx="580" cy="730" r="34" fill="none" stroke="#FF9F0A" stroke-width="10" stroke-dasharray="14 12"/>
+  </g>
+</svg>

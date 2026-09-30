@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Moon Microscope: a microscope studying a small crescent moon on its slide. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2F95"/>
+      <stop offset="1" stop-color="#8F6BE8"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="440" cy="598" r="44" fill="#fff"/>
+      <circle cx="460" cy="581" r="37" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <g fill="#FFFFFF">
+    <!-- Base and pillar -->
+    <rect x="260" y="800" width="480" height="70" rx="35"/>
+    <rect x="600" y="600" width="80" height="220" rx="24"/>
+    <!-- Arm -->
+    <path d="M640 620 Q740 440 610 250" fill="none" stroke="#FFFFFF" stroke-width="80" stroke-linecap="round"/>
+    <!-- Stage -->
+    <rect x="300" y="640" width="360" height="44" rx="22"/>
+    <!-- Tube, eyepiece, objective -->
+    <g transform="translate(520 360) rotate(20)">
+      <rect x="-55" y="-160" width="110" height="300" rx="26"/>
+      <rect x="-45" y="-235" width="90" height="90" rx="18"/>
+      <rect x="-30" y="130" width="60" height="80" rx="12"/>
+    </g>
+  </g>
+  <!-- Moon on the slide -->
+  <rect x="380" y="540" width="120" height="120" fill="url(#moon)" mask="url(#crescent)"/>
+  <path d="M800 170 Q800 210 840 210 Q800 210 800 250 Q800 210 760 210 Q800 210 800 170 Z" fill="#FFFFFF"/>
+  <path d="M210 330 Q210 355 235 355 Q210 355 210 380 Q210 355 185 355 Q210 355 210 330 Z" fill="#FFFFFF" opacity="0.8"/>
+</svg>

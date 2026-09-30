@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Z Trend: a sleepy "Z" drawn as a chart line with data points. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2B2178"/>
+      <stop offset="1" stop-color="#7A45C9"/>
+    </linearGradient>
+    <mask id="crescent">
+      <circle cx="512" cy="230" r="120" fill="#fff"/>
+      <circle cx="562" cy="188" r="100" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <polyline points="250,430 710,430 250,780 774,780" fill="none" stroke="#FFFFFF"
+            stroke-width="84" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#FFD66E">
+    <circle cx="250" cy="430" r="50"/>
+    <circle cx="710" cy="430" r="50"/>
+    <circle cx="250" cy="780" r="50"/>
+    <circle cx="774" cy="780" r="50"/>
+  </g>
+  <rect x="380" y="100" width="270" height="270" fill="#FFD66E" mask="url(#crescent)"/>
+</svg>

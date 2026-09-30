@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <!-- Moon Flask: an Erlenmeyer flask holding the night sky, with a crescent moon inside. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3A2F95"/>
+      <stop offset="1" stop-color="#8F6BE8"/>
+    </linearGradient>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1E1860"/>
+      <stop offset="1" stop-color="#2B2178"/>
+    </linearGradient>
+    <linearGradient id="moon" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF0BF"/>
+      <stop offset="1" stop-color="#FFCB5C"/>
+    </linearGradient>
+    <!-- Flask body (shared by fill, liquid clip and outline) -->
+    <path id="flask" d="M422 190 H602 V400 L800 780 Q830 850 760 850 H264 Q194 850 224 780 L422 400 Z"/>
+    <clipPath id="inside"><use href="#flask"/></clipPath>
+    <mask id="crescent">
+      <circle cx="500" cy="660" r="120" fill="#fff"/>
+      <circle cx="555" cy="615" r="100" fill="#000"/>
+    </mask>
+  </defs>
+  <rect width="1024" height="1024" fill="url(#bg)"/>
+  <!-- Night sky fills the lower part of the flask -->
+  <g clip-path="url(#inside)">
+    <rect x="150" y="500" width="724" height="400" fill="url(#sky)"/>
+    <rect x="150" y="490" width="724" height="18" fill="#FFFFFF" opacity="0.25"/>
+    <rect x="360" y="520" width="280" height="280" fill="url(#moon)" mask="url(#crescent)"/>
+    <circle cx="660" cy="720" r="9" fill="#FFFFFF"/>
+    <circle cx="330" cy="760" r="7" fill="#FFFFFF" opacity="0.8"/>
+    <circle cx="610" cy="570" r="6" fill="#FFFFFF" opacity="0.8"/>
+  </g>
+  <use href="#flask" fill="none" stroke="#FFFFFF" stroke-width="30" stroke-linejoin="round"/>
+  <rect x="396" y="160" width="232" height="44" rx="22" fill="#FFFFFF"/>
+</svg>
